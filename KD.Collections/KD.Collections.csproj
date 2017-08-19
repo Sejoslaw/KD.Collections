@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageProjectUrl>https://github.com/Sejoslaw/KD.Collections</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Sejoslaw/KD.Collections/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Sejoslaw/KD.Collections</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
