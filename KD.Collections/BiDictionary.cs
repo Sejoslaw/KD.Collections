@@ -10,7 +10,7 @@ namespace KD.Collections
     /// </summary>
     /// <typeparam name="TKey"> Key type. </typeparam>
     /// <typeparam name="TValue"> Value type. </typeparam>
-    public class BiDictionary<TKey, TValue> : IDictionary<TKey, TValue>
+    public class BiDictionary<TKey, TValue> : IBiDictionary<TKey, TValue>
     {
         /// <summary>
         /// Private internal Dictionary which stores data.
