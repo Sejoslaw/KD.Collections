@@ -3,16 +3,16 @@
 namespace KD.Collections
 {
     /// <summary>
-    /// Represents a generic collection of keys/values which can be switched to values/keys.
+    /// Represents a generic <see cref="System.Collections.IDictionary"/> of keys/values which can be switched to values/keys.
     /// </summary>
     /// <typeparam name="TKey"> The type of keys in the dictionary. </typeparam>
     /// <typeparam name="TValue"> The type of values in the dictionary. </typeparam>
     public interface IBiDictionary<TKey, TValue> : IDictionary<TKey, TValue>
     {
         /// <summary>
-        /// Switch Keys and Values and returns it as new BiDictionary.
+        /// Switch Keys and Values and returns it as new <see cref="KD.Collections.IBiDictionary{TKey, TValue}"/>.
         /// </summary>
         /// <returns> Returns new Dictionary with switched Keys and Values. </returns>
-        BiDictionary<TValue, TKey> Switch();
+        IBiDictionary<TValue, TKey> Switch();
     }
 }
