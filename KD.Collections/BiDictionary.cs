@@ -87,16 +87,16 @@ namespace KD.Collections
         }
 
         /// <summary>
-        /// Adds an item to the <see cref="System.Collections.Generic.ICollection{T}"/>.
+        /// Adds an item to the <see cref="ICollection{T}"/>.
         /// </summary>
-        /// <param name="item"> The object to add to the <see cref="System.Collections.Generic.ICollection{T}"/>. </param>
+        /// <param name="item"> The object to add to the <see cref="ICollection{T}"/>. </param>
         public void Add(KeyValuePair<TKey, TValue> item)
         {
             Add(item.Key, item.Value);
         }
 
         /// <summary>
-        /// Adds an element with the provided key and value to the <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/>.
+        /// Adds an element with the provided key and value to the <see cref="IDictionary{TKey, TValue}"/>.
         /// </summary>
         /// <param name="key"> The object to use as the key of the element to add. </param>
         /// <param name="value"> The object to use as the value of the element to add. </param>
@@ -117,20 +117,20 @@ namespace KD.Collections
         }
 
         /// <summary>
-        /// Determines whether the <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/> contains an element with the specified key.
+        /// Determines whether the <see cref="IDictionary{TKey, TValue}"/> contains an element with the specified key.
         /// </summary>
-        /// <param name="key"> The key to locate in the <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/>. </param>
-        /// <returns> true if the <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/> contains an element with the key; otherwise, false. </returns>
+        /// <param name="key"> The key to locate in the <see cref="IDictionary{TKey, TValue}"/>. </param>
+        /// <returns> true if the <see cref="IDictionary{TKey, TValue}"/> contains an element with the key; otherwise, false. </returns>
         public bool ContainsKey(TKey key)
         {
             return InternalDictionary.ContainsKey(key);
         }
 
         /// <summary>
-        /// Removes the element with the specified key from the <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/>.
+        /// Removes the element with the specified key from the <see cref="IDictionary{TKey, TValue}"/>.
         /// </summary>
         /// <param name="key"> The key of the element to remove. </param>
-        /// <returns> true if the element is successfully removed; otherwise, false. This method also returns false if key was not found in the original <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/>. </returns>
+        /// <returns> true if the element is successfully removed; otherwise, false. This method also returns false if key was not found in the original <see cref="IDictionary{TKey, TValue}"/>. </returns>
         public bool Remove(TKey key)
         {
             return InternalDictionary.Remove(key);
@@ -141,14 +141,14 @@ namespace KD.Collections
         /// </summary>
         /// <param name="key"> The key whose value to get. </param>
         /// <param name="value"> When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized. </param>
-        /// <returns> true if the object that implements <see cref="System.Collections.Generic.IDictionary{TKey, TValue}"/> contains an element with the specified key; otherwise, false. </returns>
+        /// <returns> true if the object that implements <see cref="IDictionary{TKey, TValue}"/> contains an element with the specified key; otherwise, false. </returns>
         public bool TryGetValue(TKey key, out TValue value)
         {
             return InternalDictionary.TryGetValue(key, out value);
         }
 
         /// <summary>
-        /// Removes all items from this <see cref="System.Collections.Generic.ICollection{T}"/>.
+        /// Removes all items from this <see cref="ICollection{T}"/>.
         /// </summary>
         public void Clear()
         {
@@ -156,19 +156,19 @@ namespace KD.Collections
         }
 
         /// <summary>
-        /// Determines whether the <see cref="System.Collections.Generic.ICollection{T}"/> contains a specific value.
+        /// Determines whether the <see cref="ICollection{T}"/> contains a specific value.
         /// </summary>
         /// <param name="item"> The object to locate in the System.Collections.Generic.ICollection. </param>
-        /// <returns> true if item is found in the <see cref="System.Collections.Generic.ICollection{T}"/>; otherwise, false. </returns>
+        /// <returns> true if item is found in the <see cref="ICollection{T}"/>; otherwise, false. </returns>
         public bool Contains(KeyValuePair<TKey, TValue> item)
         {
             return InternalDictionary.Contains(item);
         }
 
         /// <summary>
-        /// Copies the elements of the <see cref="System.Collections.Generic.ICollection{T}"/> to an <see cref="System.Array"/>, starting at a particular <see cref="System.Array"/> index.
+        /// Copies the elements of the <see cref="ICollection{T}"/> to an <see cref="Array"/>, starting at a particular <see cref="Array"/> index.
         /// </summary>
-        /// <param name="array"> The one-dimensional <see cref="System.Array"/> that is the destination of the elements copied from <see cref="System.Collections.Generic.ICollection{T}"/>. </param>
+        /// <param name="array"> The one-dimensional <see cref="Array"/> that is the destination of the elements copied from <see cref="ICollection{T}"/>. </param>
         /// <param name="arrayIndex"> The zero-based index in array at which copying begins. </param>
         public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
         {
@@ -176,10 +176,10 @@ namespace KD.Collections
         }
 
         /// <summary>
-        /// Removes the first occurrence of a specific object from the <see cref="System.Collections.Generic.ICollection{T}"/>.
+        /// Removes the first occurrence of a specific object from the <see cref="ICollection{T}"/>.
         /// </summary>
-        /// <param name="item"> The object to remove from the <see cref="System.Collections.Generic.ICollection{T}"/>. </param>
-        /// <returns> true if item was successfully removed from the <see cref="System.Collections.Generic.ICollection{T}"/>; otherwise, false. </returns>
+        /// <param name="item"> The object to remove from the <see cref="ICollection{T}"/>. </param>
+        /// <returns> true if item was successfully removed from the <see cref="ICollection{T}"/>; otherwise, false. </returns>
         public bool Remove(KeyValuePair<TKey, TValue> item)
         {
             return InternalDictionary.Remove(item);
